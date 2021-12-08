@@ -20,6 +20,7 @@
 
   <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script>hljs.initHighlightingOnLoad();</script>
+
 <!-- Start of Site Search 360 script (put right before the closing </body> tag) -->
 <script type="text/javascript">
 window.ss360Config = {
@@ -57,6 +58,9 @@ window.ss360Config = {
             }
         }
     },
+    searchBox: {
+        selector: "#myseach"
+    },
     tracking: {
         providers: []
     },
@@ -70,7 +74,6 @@ e.src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js";
 document.getElementsByTagName("body")[0].appendChild(e);
 </script>
 <!-- End of Site Search 360 script -->
-
 <script async src="https://js.sitesearch360.com/plugin/bundle/1112.js"></script>
   </head>
   <body class="antialiased hide-extras">
@@ -97,12 +100,12 @@ document.getElementsByTagName("body")[0].appendChild(e);
 
         <ul class="right" id="search-wrap">
           <li>
-<form target="_blank" 
+
 <section role="search" data-ss360="true">
-   <input id="searchBox" type="search" placeholder="Search…" />
+   <input id="myseach" type="search" placeholder="Search…" />
    <button id="searchButton"/>
 </section>
-</form>
+
 </li>
           </ul>
       </div></div>
