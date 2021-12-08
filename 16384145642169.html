@@ -20,14 +20,6 @@
 
   <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script>hljs.initHighlightingOnLoad();</script>
-<script type="text/javascript">
-  function before_search(){
-    var searchVal = 'site: ' + document.getElementById('search_input').value;
-    document.getElementById('search_q').value = searchVal;
-    return true;
-  }
-</script>
-
 <!-- Start of Site Search 360 script (put right before the closing </body> tag) -->
 <script type="text/javascript">
 window.ss360Config = {
@@ -68,15 +60,17 @@ window.ss360Config = {
     tracking: {
         providers: []
     },
+    siteId: "wxwsl.xyz",
     showErrors: false
 };
 
 var e=document.createElement("script");
 e.async=!0;
-e.src="https://js.sitesearch360.com/plugin/bundle/1112.js";
+e.src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js";
 document.getElementsByTagName("body")[0].appendChild(e);
 </script>
 <!-- End of Site Search 360 script -->
+
 <script async src="https://js.sitesearch360.com/plugin/bundle/1112.js"></script>
   </head>
   <body class="antialiased hide-extras">
